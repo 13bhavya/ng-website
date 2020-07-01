@@ -1,0 +1,17 @@
+/* .number {
+  display: flex;
+  
+  flex-direction: row;
+  align-items: center;
+} */
+
+.cdk-virtual-scroll-content-wrapper  {
+  display: flex;
+  float: left;
+  flex-direction: row;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+}

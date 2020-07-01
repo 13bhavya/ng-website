@@ -1,0 +1,41 @@
+<div class="jumbotron">
+  <form class="form-inline justify-content-center" (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <input class="form-control mr-2" type="text" name="search" ngModel required #username="ngModel"
+      placeholder="search...">
+    <button class="btn btn-primary " type="submit">Search</button>
+    <!-- <button class="btn btn-success"></button> -->
+  </form>
+</div>
+<div class="row">
+  <div (mouseover)="changeText=true" (mouseout)="changeText=false" class="row__inner">
+    <div *ngFor="let movie of movieItems; let i = index" class="tile">
+      <div class=" tile__media">
+        <img class="tile__img" src={{movie.imageUrl}} alt="" />
+      </div>
+      <div class="tile__details">
+        <div class="tile__title">
+          {{movie.title}} Rating: {{movie.rating}}
+        </div>
+      </div>
+      <div *ngIf="changeText">
+        <p>{{movie.overview}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="flex-container">
+      <div class="movie" *ngFor="let movie of movieItems">
+        <div class="text">
+          <h2>{{movie.title}}</h2>
+          <div class="rating">
+            <h2>{{movie.rating}}</h2>
+          </div>
+          <p class="year">{{movie.releaseDate}}</p>
+          <p class="genre">Action | Science Fiction</p>
+          <p>{{movie.overview}}</p>
+          <img class="cover mr-3 mb-3" src={{movie.imageUrl}} alt="">
+          <p>{{movie.title}}</p>
+        </div>
+      </div>
+    </div> -->

@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <ul class="list-group">
+        <li style="background-color: transparent; color: white;" class="list-group-item" #usertag
+          *ngFor="let name of names; let i = index" (click)="onClick(i)">
+          <a>{{name.name}} {{name.email}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

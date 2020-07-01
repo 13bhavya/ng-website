@@ -1,0 +1,62 @@
+.bg-dark {
+  background-color: rgba(49, 56, 66, 0.884) !important;
+}
+
+.dropdown-menu.show {
+  background-color: rgba(49, 56, 66, 0.884);
+  color: aliceblue;
+  width: 50px;
+}
+
+#show {
+  width: 50px;
+}
+
+.dropdown-item {
+  color: aliceblue;
+  padding: 5px;
+}
+
+.dropdown-item:hover {
+  color: aliceblue;
+  background-color: grey;
+}
+
+.dropdown-item.active {
+  background-color: rgb(31, 31, 31);
+  color: aliceblue;
+}
+
+/* .dropdown-item:link {
+  color: aliceblue;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+input {
+  color: black;
+  font-size: 24px;
+  background: transparent;
+  width: 27px;
+  height: 27px;
+  padding: 10px;
+  outline: none;
+  border: solid 3px white;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+
+input::placeholder {
+  color: black;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+input:focus::placeholder {
+  opacity: 1;
+}
+
+input:focus {
+  background: white;
+  width: 250px;
+}
